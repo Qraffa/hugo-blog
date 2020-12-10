@@ -1,5 +1,4 @@
-# baseURL = "http://qraffa.cn"
-baseURL = ""
+baseURL = "http://qraffa.cn"
 title = "Qraffa's Blog"
 
 theme = "fuji"
@@ -82,8 +81,8 @@ paginate = 10
 
   # Comments
   # utterances, see: https://utteranc.es/
-  utterancesRepo = "Qraffa/hugo-talk"
-  utterancesIssueTerm = "title"
+  # utterancesRepo = "Qraffa/hugo-talk"
+  # utterancesIssueTerm = "title"
 
   # Disqus, see: https://disqus.com/admin/install/platforms/universalcode/
   # disqusShortname = "*********"
@@ -91,6 +90,11 @@ paginate = 10
   # If you want to set multiple api key, see theme's README for more details
   # disqusJSApi = "https://*********/"
   # disqusJSApikey = "**********"
+
+  minivalineAppId = 'QJqhbTnSYzdlwozOKoy9ugaD-gzGzoHsz'
+  minivalineAppKey = 'lw4k46PNLo3PrDgkrphrsWHA'
+  minivalineServerURLs = 'https://lean.qraffa.cn'
+  minivalinePlaceholder = 'Write a Comment O(∩_∩)O~~'
 
   # custom lazyload placeholder
   # 16:9

@@ -1,0 +1,23 @@
+<div class="post-comment" data-comment="valine">
+    <span class="post-comment-notloaded">
+        <i class="iconfont icon-chatbox-ellipses-sharp"></i>&nbsp;{{ i18n "postComment" }}
+    </span>
+    <script src="//cdn.jsdelivr.net/npm/minivaline@latest/dist/MiniValine.min.js"></script>
+    <script>
+        function loadComment() {
+            document.querySelector('span.post-comment-notloaded').setAttribute('style', 'display: none;');
+
+            var d = document.createElement('div');
+            d.id = 'mvcomment'
+            document.querySelector('.post-comment').appendChild(d);
+
+            new MiniValine({
+                el: '#mvcomment',
+                appId: '{{ .Site.Params.minivalineAppId }}',
+                appKey: '{{ .Site.Params.minivalineAppKey }}',
+                serverURLs: '{{ .Site.Params.minivalineServerURLs }}',
+                placeholder: '{{ .Site.Params.minivalinePlaceholder }}'
+            });
+        }
+    </script>
+</div>
