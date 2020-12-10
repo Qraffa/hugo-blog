@@ -1,4 +1,5 @@
-baseURL = "http://qraffa.cn"
+# baseURL = "http://qraffa.cn"
+baseURL = ""
 title = "Qraffa's Blog"
 
 theme = "fuji"
