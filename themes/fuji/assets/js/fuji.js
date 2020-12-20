@@ -94,28 +94,10 @@ document.querySelector('.btn .btn-toggle-mode').addEventListener('click', () => 
   }
 });
 
-// search by fuse.js
+// search by vercel riot
 function searchAll(key, index, counter) {
-  let fuse = new Fuse(index, {
-    shouldSort: true,
-    distance: 10000,
-    keys: [
-      {
-        name: 'title',
-        weight: 2.0,
-      },
-      {
-        name: 'tags',
-        weight: 1.5,
-      },
-      {
-        name: 'content',
-        weight: 1.0,
-      },
-    ],
-  });
-  let result = fuse.search(key);
-  // console.log(result);
+  let result = index
+  console.log(result);
   if (result.length > 0) {
     document.getElementById('search-result').innerHTML = template('search-result-template', result);
     return [new Date().getTime() - counter, result.length];
@@ -132,7 +114,8 @@ if (urlParams.has('s')) {
   document.querySelector('.search-input input').setAttribute('value', key);
   // get search index from json
   let xhr = new XMLHttpRequest();
-  xhr.open('GET', 'index.json', true);
+  // xhr.open('GET', 'index.json', true);
+  xhr.open('GET','https://vercel-func.qraffa.vercel.app/api?s='+key,true)
   xhr.responseType = 'json';
   xhr.onerror = () => {
     infoElements[2].removeAttribute('style');
@@ -144,7 +127,7 @@ if (urlParams.has('s')) {
     if (xhr.readyState === 4) {
       if (xhr.status === 200) {
         // use index json to search
-        // console.log(xhr.response);
+        console.log(xhr.response);
         counter = searchAll(key, xhr.response, counter);
         // console.log(counter);
         if (counter === 'notFound') {

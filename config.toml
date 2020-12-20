@@ -93,7 +93,8 @@ paginate = 10
 
   minivalineAppId = 'QJqhbTnSYzdlwozOKoy9ugaD-gzGzoHsz'
   minivalineAppKey = 'lw4k46PNLo3PrDgkrphrsWHA'
-  minivalineServerURLs = 'https://lean.qraffa.cn'
+  # minivalineServerURLs = 'https://lean.qraffa.cn'
+  minivalineServerURLs = 'https://hugo-waline.vercel.app'
   minivalinePlaceholder = 'Write a Comment O(∩_∩)O~~'
 
   # custom lazyload placeholder

@@ -13,9 +13,9 @@
 
             new MiniValine({
                 el: '#mvcomment',
-                appId: '{{ .Site.Params.minivalineAppId }}',
-                appKey: '{{ .Site.Params.minivalineAppKey }}',
+                backend: 'waline',
                 serverURLs: '{{ .Site.Params.minivalineServerURLs }}',
+                pathname: window.location.pathname,
                 placeholder: '{{ .Site.Params.minivalinePlaceholder }}'
             });
         }
