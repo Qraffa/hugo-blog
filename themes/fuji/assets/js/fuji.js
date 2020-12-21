@@ -96,8 +96,8 @@ document.querySelector('.btn .btn-toggle-mode').addEventListener('click', () => 
 
 // search by vercel riot
 function searchAll(key, index, counter) {
-  let result = index
-  console.log(result);
+  let result = index.Docs
+  // console.log(result);
   if (result.length > 0) {
     document.getElementById('search-result').innerHTML = template('search-result-template', result);
     return [new Date().getTime() - counter, result.length];
@@ -127,7 +127,7 @@ if (urlParams.has('s')) {
     if (xhr.readyState === 4) {
       if (xhr.status === 200) {
         // use index json to search
-        console.log(xhr.response);
+        // console.log(xhr.response);
         counter = searchAll(key, xhr.response, counter);
         // console.log(counter);
         if (counter === 'notFound') {
