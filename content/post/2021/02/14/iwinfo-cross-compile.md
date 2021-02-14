@@ -13,6 +13,8 @@ categories:
 
 前提条件：编译了完整的openwrt，并且选了iwinfo软件包，在`make menuconfig`中选择了交叉编译的工具链。
 
+<!--more-->
+
 ![image-20210214193138471](http://qiniu.qraffa.cn/image-20210214193138471.png)
 
 ### 定位iwinfo包

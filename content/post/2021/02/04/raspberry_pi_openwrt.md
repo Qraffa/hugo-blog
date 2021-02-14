@@ -17,6 +17,8 @@ categories:
 
 这里买的usb无线网卡是EDUP EP-N8508GS
 
+<!--more-->
+
 ### 下载镜像
 
 官网下载

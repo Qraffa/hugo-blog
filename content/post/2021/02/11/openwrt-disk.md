@@ -13,6 +13,8 @@ categories:
 
 [https://blog.csdn.net/xjtumengfanbin/article/details/106871591](https://blog.csdn.net/xjtumengfanbin/article/details/106871591)
 
+<!--more-->
+
 ### 过程
 
 - `fdisk /dev/mmcblk0`查看磁盘

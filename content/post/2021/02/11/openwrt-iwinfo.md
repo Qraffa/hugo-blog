@@ -15,6 +15,8 @@ categories:
 
 这里获取的是简化版的，去掉了ubus和uci的
 
+<!--more-->
+
 ### 编译过程
 
 1. 先执行一次自带的makefile的编译`make`
