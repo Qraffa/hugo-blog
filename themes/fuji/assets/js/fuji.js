@@ -94,9 +94,27 @@ document.querySelector('.btn .btn-toggle-mode').addEventListener('click', () => 
   }
 });
 
-// search by vercel riot
+// search by fuse.js
 function searchAll(key, index, counter) {
-  let result = index.Docs
+  let fuse = new Fuse(index, {
+    shouldSort: true,
+    distance: 10000,
+    keys: [
+      {
+        name: 'title',
+        weight: 2.0,
+      },
+      {
+        name: 'tags',
+        weight: 1.5,
+      },
+      {
+        name: 'content',
+        weight: 1.0,
+      },
+    ],
+  });
+  let result = fuse.search(key);
   // console.log(result);
   if (result.length > 0) {
     document.getElementById('search-result').innerHTML = template('search-result-template', result);
@@ -114,8 +132,7 @@ if (urlParams.has('s')) {
   document.querySelector('.search-input input').setAttribute('value', key);
   // get search index from json
   let xhr = new XMLHttpRequest();
-  // xhr.open('GET', 'index.json', true);
-  xhr.open('GET','https://vercel-func.qraffa.vercel.app/api?s='+key,true)
+  xhr.open('GET', 'index.json', true);
   xhr.responseType = 'json';
   xhr.onerror = () => {
     infoElements[2].removeAttribute('style');

@@ -2,15 +2,13 @@
 
 简单的 Hugo 主题，支持夜间模式，Markdown 样式来自 GitHub Primer。
 
-![GitHub release](https://img.shields.io/github/v/release/amzrk2/hugo-theme-fuji)
-![GitHub build status](https://img.shields.io/github/workflow/status/amzrk2/hugo-theme-fuji/Build%20Test)
-![GitHub license](https://img.shields.io/github/license/amzrk2/hugo-theme-fuji)
+![GitHub release](https://img.shields.io/github/v/release/dsrkafuu/hugo-theme-fuji)
+![GitHub build status](https://img.shields.io/github/workflow/status/dsrkafuu/hugo-theme-fuji/build-test)
+![GitHub license](https://img.shields.io/github/license/dsrkafuu/hugo-theme-fuji)
 
-[English](https://github.com/amzrk2/hugo-theme-fuji#readme) | [简体中文](https://github.com/amzrk2/hugo-theme-fuji/blob/master/README_CN.md)
+[English](https://github.com/dsrkafuu/hugo-theme-fuji#readme) | [简体中文](https://github.com/dsrkafuu/hugo-theme-fuji/blob/master/README_CN.md)
 
-> 我为略有经验的前端开发者们构建了一个名为 [Aofuji](https://github.com/amzrk2/hugo-template-aofuji) 的全新 Hugo 主题。它**不是一个功能完整的主题**而更像是个模板，它有继承于 Fuji 的优秀整体配色、现代卡片式设计以及完善的深色模式支持。
-
-> 你可以在这里预览并 fork 它：[hugo-template-aofuji](https://github.com/amzrk2/hugo-template-aofuji)，以及这是我基于这个模板开发的全新个人站点，可以作为示例：[amzrk2-ng](https://github.com/amzrk2/amzrk2-ng)。
+> 介绍一个全新的亮色 VSCode 主题 [Aofuji Light Theme](https://github.com/dsrkafuu/vscode-theme-aofuji)，它的配色方案继承自 [Aofuji](https://github.com/amzrk2/hugo-template-aofuji)！
 
 支持的 i18n 语言：`cs`, `en`, `ja`, `nl`, `pt-pt`, `zh-hans`, `zh-hant`。i18n 文件夹内为所有语言文件。
 
@@ -37,7 +35,7 @@
 
 [**Live Demo (gohugo.io)**](https://themes.gohugo.io/theme/hugo-theme-fuji/)
 
-![Fuji 截图](https://raw.githubusercontent.com/amzrk2/hugo-theme-fuji/master/images/screenshot.png)
+![Fuji 截图](https://raw.githubusercontent.com/dsrkafuu/hugo-theme-fuji/master/images/screenshot.png)
 
 ## ❗ 注意事项
 
@@ -95,20 +93,13 @@ showComments = false # 对这篇文章关闭评论
 
 ### 🎵 文章音乐
 
-支持给文章单独添加 APlayer，在 front matter 里加上这些:
+In-post APlayer supported, you use the `aplayer` shortcode:
 
-```toml
-[[player]]
-  playerName = "..." # 标题
-  playerArtist = "..." # 作者
-  playerURL = "..." # URL
-  playerCover = "..." # 封面
-[[player]]
-  playerName = "..."
-  playerArtist = "..."
-  playerURL = "..."
-  playerCover = "..."
+```txt
+{{< aplayer urls="/aplayer/fluid.mp3" names="Fluid" artists="Crowander" covers="/aplayer/crowander.jpg" >}}
 ```
+
+Checkout the `exampleSite/content/post/aplayer-test.md` for more example usage such as using multiple files.
 
 ### 📐 LaTeX 渲染
 
@@ -255,13 +246,13 @@ To override SCSS rules, create `[SITEROOT]/assets/scss/_custom_rules.scss`. This
 
 ## 👓 批判一番和贡献代码
 
-[Issue](https://github.com/amzrk2/hugo-theme-fuji/issues)。主题本身只在 Firefox 上完整测试过，因此要是遇到了什么问题也可以随便批判。
+[Issue](https://github.com/dsrkafuu/hugo-theme-fuji/issues)。主题本身只在 Firefox 上完整测试过，因此要是遇到了什么问题也可以随便批判。
 
 ## 📝 License
 
-<img align="right" alt="FOSSA" src="https://app.fossa.com/api/projects/git%2Bgithub.com%2Famzrk2%2Fhugo-theme-fuji.svg?type=large" />
+<a href="https://app.fossa.com/projects/git%2Bgithub.com%2Fdsrkafuu%2Fhugo-theme-fuji?ref=badge_large" alt="FOSSA Status"><img align="right" src="https://app.fossa.com/api/projects/git%2Bgithub.com%2Fdsrkafuu%2Fhugo-theme-fuji.svg?type=large"/></a>
 
-The theme is released under the `Apache License 2.0`, for more information read the [License](https://github.com/amzrk2/hugo-theme-fuji/blob/master/LICENSE).
+The theme is released under the `Apache License 2.0`, for more information read the [License](https://github.com/dsrkafuu/hugo-theme-fuji/blob/master/LICENSE).
 
 - [Primer CSS - MIT](https://github.com/primer/css/blob/master/LICENSE)
 - [APlayer - MIT](https://github.com/MoePlayer/APlayer/blob/master/LICENSE)
@@ -272,10 +263,10 @@ The theme is released under the `Apache License 2.0`, for more information read 
 - [cloudflare-workers-async-google-analytics - MIT](https://github.com/SukkaW/cloudflare-workers-async-google-analytics/blob/master/LICENSE)
 - [art-template - MIT](https://github.com/aui/art-template/blob/master/LICENSE)
 
-**Copyright © 2020-present DSRKafuU <https://amzrk2.cc/>**
+**Copyright © 2019-present DSRKafuU <https://dsrkafuu.su/>**
 
 ## 🤝 Annotations
 
-Thanks to [community contributors](https://github.com/amzrk2/hugo-theme-fuji/graphs/contributors) for great help.
+Thanks to [community contributors](https://github.com/dsrkafuu/hugo-theme-fuji/graphs/contributors) for great help.
 
 Learned a lot in [Sukka's Blog](https://blog.skk.moe/).
