@@ -62,7 +62,7 @@ params:
     profileMode:
         enabled: true
         title: Qraffa
-        imageUrl: "http://qiniu.qraffa.cn/golang.png"
+        imageUrl: "https://upyun.qraffa.cn/golang.png"
         imageTitle: my image
         # imageWidth: 120
         # imageHeight: 120
