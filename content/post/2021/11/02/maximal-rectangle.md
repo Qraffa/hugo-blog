@@ -57,7 +57,7 @@ func maximalRectangle(matrix [][]byte) int {
 			matrix[i][j] = matrix[i][j] - 48
 		}
 	}
-  // 维护列上的连续1的个数
+  // 维护行上的连续1的个数
 	for i := 0; i < len(matrix); i++ {
 		for j := 1; j < len(matrix[i]); j++ {
 			if matrix[i][j] != 0 && matrix[i][j-1] != 0 {
@@ -71,9 +71,9 @@ func maximalRectangle(matrix [][]byte) int {
 			var ml int = max(len(matrix), len(matrix[0])) + 1
 			ans = max(ans, int(matrix[i][j]))
 			ml = min(ml, int(matrix[i][j]))
-      // 从下往上遍历
+      // 从右往左遍历
 			for k := i - 1; k >= 0 && matrix[k][j] != 0; k-- {
-        // 维护最小长
+        // 维护最小宽
 				ml = min(ml, int(matrix[k][j]))
         // 计算面积
 				ans = max(ans, (i-k+1)*ml)
