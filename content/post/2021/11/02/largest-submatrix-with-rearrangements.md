@@ -1,7 +1,7 @@
 ---
 title: "重新排列后的最大子矩阵"
 date: 2021-11-02T10:11:32+08:00
-url: largest-submatrix-with-rearrangements
+url: post/2021/11/02/largest-submatrix-with-rearrangements
 tags:
 - 算法
 categories:
