@@ -1,7 +1,7 @@
 ---
 title: "Go Gc"
 date: 2021-03-15T23:11:50+08:00
-url: go-gc
+url: post/2021/03/15/go-gc
 tags:
 - go
 categories: 
@@ -55,7 +55,7 @@ gc触发时机
 
 图来自https://golang.design/under-the-hood/zh-cn/part2runtime/ch08gc/barrier/
 
-![](http://qiniu.qraffa.cn/gc-mutator.png)
+![](/images/gc-mutator.png)
 
 
 

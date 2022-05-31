@@ -1,7 +1,7 @@
 ---
 title: "Go Memory"
 date: 2021-03-09T01:07:35+08:00
-url: go-memory
+url: post/2021/03/09/go-memory
 tags:
 - go
 categories: 

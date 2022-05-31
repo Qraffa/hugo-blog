@@ -1,7 +1,7 @@
 ---
 title: "将数组分成三个子数组的方案数"
 date: 2021-02-28T23:16:33+08:00
-url: ways-to-split-array-into-three-subarrays
+url: post/2021/02/28/ways-to-split-array-into-three-subarrays
 tags:
 - 算法
 categories: 

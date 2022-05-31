@@ -1,7 +1,7 @@
 ---
 title: "分割数组的最大值"
 date: 2021-11-02T00:00:03+08:00
-url: split-array-largest-sum
+url: post/2021/11/02/split-array-largest-sum
 tags:
 - 算法
 categories: 

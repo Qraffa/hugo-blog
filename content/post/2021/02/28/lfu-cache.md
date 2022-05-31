@@ -1,7 +1,7 @@
 ---
 title: "LFU 缓存"
 date: 2021-02-28T23:17:10+08:00
-url: lfu-cache
+url: post/2021/02/28/lfu-cache
 tags:
 - 算法
 categories: 

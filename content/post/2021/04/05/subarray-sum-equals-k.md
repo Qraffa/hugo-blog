@@ -1,7 +1,7 @@
 ---
 title: "和为K的子数组"
 date: 2021-04-05T17:52:25+08:00
-url: subarray-sum-equals-k
+url: post/2021/04/05/subarray-sum-equals-k
 tags:
 - 算法
 categories: 
