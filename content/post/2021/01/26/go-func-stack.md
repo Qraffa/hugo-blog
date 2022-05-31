@@ -289,7 +289,7 @@ $70 = (void *) 0xc0000307d0
 
 ### 作图分析
 
-![stack](images/stack.svg)
+![stack](/images/stack.svg)
 
 - 1~4对应图1的初始状态
 - 5~8对应图2的main栈帧在调用add函数之前的一些操作，比如BP，SP指针修改，参数入栈等
