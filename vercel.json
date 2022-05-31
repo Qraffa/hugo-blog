@@ -3,5 +3,11 @@
     "env": {
       "HUGO_VERSION": "0.82.0"
     }
-  }
+  },
+  "rewrites": [
+	  {
+		  "source": "/images/:match",
+		  "destination": "http://qiniu.qraffa.cn/:match*"
+	  }
+  ]
 }
