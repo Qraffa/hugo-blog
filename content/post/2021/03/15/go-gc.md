@@ -55,7 +55,7 @@ gc触发时机
 
 图来自https://golang.design/under-the-hood/zh-cn/part2runtime/ch08gc/barrier/
 
-![](/images/gc-mutator.png)
+![](https://qraffa-1304595678.cos.ap-guangzhou.myqcloud.com/img/gc-mutator.png)![](/images/gc-mutator.png)
 
 
 

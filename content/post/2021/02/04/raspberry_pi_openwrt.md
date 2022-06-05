@@ -46,10 +46,15 @@ SD卡格式化工具
 ### 连接树莓派
 
 - 如果树莓派有显示器连接，那直接连上操作即可
+
 - 如果是通过一条网线，将电脑与树莓派连在一起
+
 - 如果树莓派是与路由器连接，电脑也与路由器连接
   - 树莓派默认设置网卡为静态地址192.168.1.1
-  - 这是将本机电脑ip改成静态的192.168.1.2![image-20210204013855886](http://qiniu.qraffa.cn/image-20210204013855886.png)
+  - 这是将本机电脑ip改成静态的192.168.1.2
+
+  ![](https://qraffa-1304595678.cos.ap-guangzhou.myqcloud.com/img/image-20210204013855886.png)
+
   - 这时本机电脑与树莓派就在同一个网段了，可以互相ping通，因此可以ssh过去或者在浏览器中进入192.168.1.1
 
 ### 树莓派上网
@@ -118,11 +123,13 @@ config interface 'lan'
 
   - 进入luci web
 
-  - 进入software配置![image-20210204015649911](http://qiniu.qraffa.cn/image-20210204015649911.png)
+  - 进入software配置
+
+    ![](https://qraffa-1304595678.cos.ap-guangzhou.myqcloud.com/img/image-20210204015649911.png)
 
   - 修改软件源
 
-    ![image-20210204015758255](http://qiniu.qraffa.cn/image-20210204015758255.png)
+    ![](https://qraffa-1304595678.cos.ap-guangzhou.myqcloud.com/img/image-20210204015758255.png)
 
   ==！！！这里的软件源需要适配自己的openwrt版本和树莓派架构！！！==
 
@@ -138,7 +145,7 @@ config interface 'lan'
 
   - 设置好软件源配置后，更新列表，等待更新完成即可
 
-    ![image-20210204020001463](http://qiniu.qraffa.cn/image-20210204020001463.png)
+    ![](https://qraffa-1304595678.cos.ap-guangzhou.myqcloud.com/img/image-20210204015649911.png)
 
 - 至此就可以安装需要的软件包了
 

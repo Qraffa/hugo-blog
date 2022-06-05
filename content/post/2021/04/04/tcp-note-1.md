@@ -37,7 +37,7 @@ categories:
 
 分组窗口：已发送但还未收到ACK的分组集合
 
-![image-20210322235341095](/images/image-20210322235341095.png)
+![](https://qraffa-1304595678.cos.ap-guangzhou.myqcloud.com/img/image-20210322235341095.png)
 
 滑动窗口：对于上图中，当收到分组4的ACK后，窗口向右滑动，表示分组7可以被发送
 
@@ -77,11 +77,11 @@ tcp提供**面向连接**的，**可靠字节流**服务
 
 IP数据报封装：
 
-![image-20210323005125703](/images/image-20210323005125703.png)
+![](https://qraffa-1304595678.cos.ap-guangzhou.myqcloud.com/img/image-20210323005125703.png)
 
 TCP头部：
 
-![image-20210323005255380](/images/image-20210323005255380.png)
+![](https://qraffa-1304595678.cos.ap-guangzhou.myqcloud.com/img/image-20210323005255380.png)
 
 头部特殊字段：
 
@@ -96,7 +96,7 @@ TCP头部：
 
 #### 18.2 连接的建立与终止
 
-![image-20210323221126188](/images/image-20210323221126188.png)
+![](https://qraffa-1304595678.cos.ap-guangzhou.myqcloud.com/img/image-20210323221126188.png)
 
 **建立连接：**
 
@@ -130,11 +130,11 @@ net.ipv4.tcp_syn_retries = 6
 
 **状态图：**
 
-![image-20210324143002923](/images/image-20210324143002923.png)
+![](https://qraffa-1304595678.cos.ap-guangzhou.myqcloud.com/img/image-20210324143002923.png)
 
 **三次握手状态变化：**
 
-![image-20210324143048022](/images/image-20210324143048022.png)
+![](https://qraffa-1304595678.cos.ap-guangzhou.myqcloud.com/img/image-20210324143048022.png)
 
 **第三次握手的原因：**
 
@@ -157,7 +157,7 @@ net.ipv4.tcp_fin_timeout = 60
 
 状态过程：
 
-![image-20210325001232922](/images/image-20210325001232922.png)
+![](https://qraffa-1304595678.cos.ap-guangzhou.myqcloud.com/img/image-20210325001232922.png)
 
 两端同时发送SYN，并都进入SYN_RCVD状态，当收到自己发送的SYN的ACK后，进入ESTABLISHED状态
 
@@ -167,7 +167,7 @@ net.ipv4.tcp_fin_timeout = 60
 
 状态过程：
 
-![image-20210325002000463](/images/image-20210325002000463.png)
+![](https://qraffa-1304595678.cos.ap-guangzhou.myqcloud.com/img/image-20210325002000463.png)
 
 两端同时关闭，从ESTABLISHED状态变为FIN_WAIT_1，并在收到FIN的ACK后，进入TIME_WAIT状态
 
@@ -264,7 +264,7 @@ CORK发送条件：
 
 #### 20.3 滑动窗口
 
-![image-20210326233908338](/images/image-20210326233908338.png)
+![](https://qraffa-1304595678.cos.ap-guangzhou.myqcloud.com/img/image-20210326233908338.png)
 
 上图说明：
 
@@ -283,13 +283,13 @@ CORK发送条件：
 
 tcp报文发送情况：
 
-![image-20210326235654932](/images/image-20210326235654932.png)
+![](https://qraffa-1304595678.cos.ap-guangzhou.myqcloud.com/img/image-20210326235654932.png)
 
 tcp滑动窗口运动情况：
 
-![image-20210326235724077](/images/image-20210326235724077.png)
+![](https://qraffa-1304595678.cos.ap-guangzhou.myqcloud.com/img/image-20210326235724077.png)
 
-![tcp](/images/tcp.png)
+![](https://qraffa-1304595678.cos.ap-guangzhou.myqcloud.com/img/tcp.png)
 
 - 绿色表示可用窗口
 
@@ -424,7 +424,7 @@ net.ipv4.tcp_congestion_control = cubic
 
 #### Reno
 
-![image-20210330002936869](/images/image-20210330002936869.png)
+![](https://qraffa-1304595678.cos.ap-guangzhou.myqcloud.com/img/image-20210330002936869.png)
 
 reno包含上述的慢开始、拥塞避免、快重传、快恢复
 
@@ -439,7 +439,7 @@ reno包含上述的慢开始、拥塞避免、快重传、快恢复
 
 由于在标准TCP的拥塞控制中，如Reno算法，在拥塞发生后，使用线性的窗口增长函数，导致其在大网络带宽环境下网络资源利用率低。
 
-![image-20210401195006827](/images/image-20210401195006827.png)
+![](https://qraffa-1304595678.cos.ap-guangzhou.myqcloud.com/img/image-20210401195006827.png)
 
 ##### cubic相关函数解释：
 

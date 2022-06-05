@@ -25,7 +25,7 @@ categories:
 
 ***x:y表示x个用户线程对应y个内核线程***
 
-![](http://115.29.201.93:8089/admin/TOIMGba0cd1230081812N.png)
+![](https://qraffa-1304595678.cos.ap-guangzhou.myqcloud.com/img/TOIMGba0cd1230081812N.png)
 
 ### GMP调度模型
 

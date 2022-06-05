@@ -15,7 +15,7 @@ categories:
 
 <!--more-->
 
-![image-20210214193138471](http://qiniu.qraffa.cn/image-20210214193138471.png)
+![](https://qraffa-1304595678.cos.ap-guangzhou.myqcloud.com/img/image-20210214193138471.png)
 
 ### 定位iwinfo包
 
